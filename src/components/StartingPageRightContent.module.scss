@@ -1,0 +1,147 @@
+.rightContent {
+  width: 20rem;
+  margin: 10px;
+  background-color: rgb(241, 235, 235);
+  border-radius: 10px;
+  padding: 0.5rem;
+  overflow: auto;
+  .friendRequestBox {
+    width: 100%;
+    height: 130px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    margin-bottom: 10px;
+    .friendRequestHeader {
+      display: flex;
+      justify-content: space-between;
+      justify-items: center;
+      padding: 10px;
+      background-color: rgba(15, 15, 134, 0.644);
+      color: white;
+      border-radius: 5px 5px 0 0;
+      span {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .person {
+      display: flex;
+      padding-top: 15px;
+      padding-left: 10px;
+      .personIcon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .personName {
+        padding-left: 10px;
+        .personApproval {
+          display: flex;
+          margin-top: 10px;
+          .acceptBtn {
+            width: 65px;
+            height: 35px;
+            background-color: rgba(15, 15, 134, 0.644);
+            color: white;
+            font-weight: bold;
+            border: unset;
+            border-radius: 5px 5px;
+            margin-right: 10px;
+            cursor: pointer;
+            &:hover {
+              background-color: lightblue;
+              color: rgba(15, 15, 134, 0.644)
+            }
+          }
+          .declineBtn {
+            width: 65px;
+            height: 35px;
+            background-color: rgb(241, 235, 235);
+            color: rgba(15, 15, 134, 0.644);
+            font-weight: bold;
+            border: unset;
+            border-radius: 5px 5px;
+            cursor: pointer;
+            &:hover {
+              background-color: lightblue;
+              color: rgba(15, 15, 134, 0.644)
+            }
+          }
+        }
+      }
+    }
+  }
+  .chatWrapper {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    .chatHeader {
+      background-color: rgba(15, 15, 134, 0.644);
+      color: #fff;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    .chat {
+      margin: 5px;
+      .chatSearchbar {
+        width: 95%;
+        height: 30px;
+        margin: 5px 0;
+        border-radius: 25px;
+        border: 2px solid rgb(196, 182, 182);
+        padding-left: 10px;
+      }
+      .chatList{
+        padding: 5px;
+        position: relative;
+        .chatOptionsMenu {
+          width: 100px;
+          height: 150px;
+          background-color: #fff;
+          border: 1px solid rgb(241, 235, 235);
+          border-radius: 10px;
+          position: absolute;
+          right: 25px;
+          top: 15px;
+        }
+        .chatUser{
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          a {
+            display: flex;
+              align-items: center;
+              margin-bottom: 10px;
+              position: relative;
+              z-index: 1;
+              &::after {
+                content: "";
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: green;
+                position: absolute;
+                bottom: 0;
+                left: 5px;
+                z-index: 2;
+              }
+              .chatUserIcon{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 10px;
+               
+              }
+          }
+           
+        }
+      }
+    }
+  }
+}
